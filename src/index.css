@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  --color-darkest: #343a40;
+  --color-dark: #495057;
+  --color-medium: #ced4da;
+  --color-light: #f1f3f5;
+
+  --color-theme: #1098ad;
+  --color-accent: #ffa94d;
+} */
+
+@layer components {
+  .input {
+    @apply rounded-full border border-stone-200 px-4 py-2 text-sm transition-all duration-300 focus:outline-none focus:ring focus:ring-slate-400 md:px-6 md:py-3;
+  }
+  .btn {
+    @apply inline-block text-sm md:text-base rounded-full font-medium border-buttonColor text-white transition-colors duration-300 md:px-8 md:py-4 bg-buttonColor self-center hover:bg-mainColor hover:border-2 hover:border-buttonColor  focus:ring-gray-300 focus:ring-offset-2 focus:ring px-3 py-2 md:w-96 w-72 text-left;
+  }
+  .btn-option.correct {
+    @apply bg-cyan-400;
+  }
+
+  .btn-option.wrong {
+    @apply bg-orange-400;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Codystar&display=swap");
